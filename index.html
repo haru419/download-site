@@ -2,65 +2,93 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>ダウンロードページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ダウンロード一覧</title>
+
 <style>
 body {
   background-color: #111;
   color: red;
   font-family: sans-serif;
   text-align: center;
-  padding-top: 80px;
+  margin: 0;
+  padding: 40px 10px;
 }
+
 .box {
   border: 3px solid red;
-  padding: 40px;
-  width: 90%;
-  max-width: 500px;
+  padding: 20px;
+  max-width: 600px;
   margin: auto;
   background: black;
+  border-radius: 10px;
 }
+
+.item {
+  margin: 25px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* 点滅アニメーション */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
 a {
-  display: block;
-  margin: 15px auto;
+  display: inline-block;
   padding: 15px 30px;
   background: red;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
-  width: 85%;
+  border-radius: 8px;
+  animation: blink 1s infinite;
 }
+
 a:hover {
   background: darkred;
 }
 </style>
 </head>
+
 <body>
 
 <div class="box">
   <h1>⚠ ダウンロード一覧</h1>
-  <p>下のボタンを押してください。</p>
 
-  <a href="もんげぇぇぇ.mp4" download>
-    もんげぇぇぇ.mp4 をダウンロード
-  </a>
+  <div class="item">
+    <img src="もんげぇぇぇサムネ.jpg">
+    <a href="もんげぇぇぇ.mp4" download>もんげぇぇぇ.mp4 をダウンロード</a>
+  </div>
 
-  <a href="もんげぇぇぇ元動画.mp4" download>
-    もんげぇぇぇ元動画.mp4 をダウンロード
-  </a>
+  <div class="item">
+    <img src="もんげぇぇぇ元動画サムネ.jpg">
+    <a href="もんげぇぇぇ元動画.mp4" download>もんげぇぇぇ元動画.mp4 をダウンロード</a>
+  </div>
 
-  <a href="カラオケアカデミー.jpg" download>
-    カラオケアカデミー.jpg をダウンロード
-  </a>
+  <div class="item">
+    <img src="カラオケアカデミー.jpg">
+    <a href="カラオケアカデミー.jpg" download>カラオケアカデミー.jpg をダウンロード</a>
+  </div>
 
-   <a href="やらかしアカデミー.jpg" download>
-    やらかしアカデミー.jpg をダウンロード
-  </a>
+  <div class="item">
+    <img src="やらかしアカデミー.jpg">
+    <a href="やらかしアカデミー.jpg" download>やらかしアカデミー.jpg をダウンロード</a>
+  </div>
 
-  <a href="メガネクイッアカデミー.jpg" download>
-    メガネクイッアカデミー.jpg をダウンロード
-  </a>
-  
+  <div class="item">
+    <img src="メガネクイッアカデミー.jpg">
+    <a href="メガネクイッアカデミー.jpg" download>メガネクイッアカデミー.jpg をダウンロード</a>
+  </div>
+
 </div>
 
 </body>
